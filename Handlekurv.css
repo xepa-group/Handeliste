@@ -1,0 +1,151 @@
+.Top {
+    position:absolute;
+    width:100%;
+    height: 8%;
+    background-color: none;
+}
+.Settings{
+    position: relative;
+    width: 10%;
+    height:60%;
+    background-color: none;
+    top: 10%;
+    padding-left: 3%;
+}
+.SearchText{
+    position: absolute;
+    left:30%;
+    font-size:60px;
+    background-color:none;
+    top:35%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.SearchButton{
+    position: relative;
+    width: 10%;
+    height:60%;
+    background-color: none;
+    top: 10%;
+    padding-left: 3%;
+    left:67%;
+}
+hr{
+    border:1px solid black;
+}
+.vl {
+    position: absolute;
+    border-left: 2px solid black;
+    height: 1300px;
+    left: 55%;
+}
+.Bottom{
+    position:absolute;
+    top:90%;
+    background-color:none;
+    width: 100%;
+    height:8%;
+}
+.Home{
+    position:absolute;
+    top:20%;
+    background-color:none;
+    width: 15%;
+    height:100%;
+    left:9%;
+}
+.Inbox{
+    position:absolute;
+    top:20%;
+    background-color:none;
+    width: 15%;
+    height:100%;
+    left:32%;
+}
+.Cart{
+    position:absolute;
+    top:20%;
+    background-color:none;
+    width: 15%;
+    height:100%;
+    left:55%;
+}
+.Account{
+    position:absolute;
+    top:20%;
+    background-color:none;
+    width: 15%;
+    height:100%;
+    left: 77%;
+}
+.hr{
+    position:absolute;
+    border:1px solid black;
+    width:80%;
+    top:90%;
+    left:9%;
+}
+.h1{
+    position:absolute;
+    top:9%;
+    font-size:80px;
+    left:35%;
+}
+.SearchBar{
+    position:absolute;
+    border: 2px solid gray;
+    top:15%;
+    left:15%;
+    height:9%;
+    width:70%;
+    border-radius: 35px;
+    box-shadow: 2px 12px lightgray;
+}
+.SearchBarText {
+    position: absolute;
+    font-size: 65px;
+    top: 33%;
+    left: 12%;
+    height: 8%;
+    width: 75%;
+    text-align: center;
+}
+.Handlelistebox{
+    position:absolute;
+    top:27%;
+    background-color:lightgray;
+    width:85%;
+    height:58%;
+    left:8%;
+    border-radius:35px;
+}
+.HandlelisteMatvarer{
+    position:absolute;
+    top:6%;
+    background-color:none;
+    width:85%;
+    height:78%;
+    left:8%;
+    font-size:55px;
+}
+.HandlelistePris{
+    position:absolute;
+    top:6%;
+    background-color:none;
+    width:18%;
+    height:78%;
+    left:79%;
+    font-size:55px;
+}
+.Sum{
+    position:absolute;
+    top:75%;
+    background-color:none;
+    width:70%;
+    height:8%;
+    left:20%;
+    font-size:55px;
+}
