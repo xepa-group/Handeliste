@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="La til html og css fil">
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-    </list>
+    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="Lagde en mappe med alle filer" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +20,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1zg0VvCd8J9u9AoM7bp8nkZXrQY" />
   <component name="ProjectViewState">
@@ -51,7 +48,7 @@
       <updated>1634554450716</updated>
       <workItem from="1634554452463" duration="300000" />
       <workItem from="1634554790899" duration="1481000" />
-      <workItem from="1634631846508" duration="6719000" />
+      <workItem from="1634631846508" duration="7203000" />
     </task>
     <task id="LOCAL−00001" summary="Lage html og css fil">
       <created>1634554584066</created>
@@ -65,7 +62,19 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1634555208665</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Hjemme side">
+      <created>1634717935628</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1634717935628</updated>
+    </task>
+    <task id="LOCAL−00004" summary="Lagde en mappe med alle filer">
+      <created>1634718265137</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1634718265137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,6 +96,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Lage html og css fil" />
     <MESSAGE value="La til html og css fil" />
-    <option name="LAST_COMMIT_MESSAGE" value="La til html og css fil" />
+    <MESSAGE value="Hjemme side" />
+    <MESSAGE value="Lagde en mappe med alle filer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagde en mappe med alle filer" />
   </component>
 </project>
