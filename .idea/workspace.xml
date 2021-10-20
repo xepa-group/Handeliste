@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="fil endring" />
+    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="Stien til bilder">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +23,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1zg0VvCd8J9u9AoM7bp8nkZXrQY" />
   <component name="ProjectViewState">
@@ -48,7 +59,7 @@
       <updated>1634554450716</updated>
       <workItem from="1634554452463" duration="300000" />
       <workItem from="1634554790899" duration="1481000" />
-      <workItem from="1634631846508" duration="7592000" />
+      <workItem from="1634631846508" duration="9112000" />
     </task>
     <task id="LOCAL−00001" summary="Lage html og css fil">
       <created>1634554584066</created>
@@ -80,7 +91,19 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1634718660084</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Stien til bilder">
+      <created>1634718868698</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1634718868698</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Stien til bilder">
+      <created>1634719059480</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1634719059480</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +128,7 @@
     <MESSAGE value="Hjemme side" />
     <MESSAGE value="Lagde en mappe med alle filer" />
     <MESSAGE value="fil endring" />
-    <option name="LAST_COMMIT_MESSAGE" value="fil endring" />
+    <MESSAGE value="Stien til bilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stien til bilder" />
   </component>
 </project>
