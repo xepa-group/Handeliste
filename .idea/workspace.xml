@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="Binder sammen nav bar">
+    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison.css" beforeDir="false" afterPath="$PROJECT_DIR$/Comparison.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison.html" beforeDir="false" afterPath="$PROJECT_DIR$/Comparison.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <updated>1634554450716</updated>
       <workItem from="1634554452463" duration="300000" />
       <workItem from="1634554790899" duration="1481000" />
-      <workItem from="1634631846508" duration="10080000" />
+      <workItem from="1634631846508" duration="12214000" />
     </task>
     <task id="LOCAL−00001" summary="Lage html og css fil">
       <created>1634554584066</created>
@@ -116,7 +115,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1634722098767</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Binder sammen nav bar">
+      <created>1634723322374</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1634723322374</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
