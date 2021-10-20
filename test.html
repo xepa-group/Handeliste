@@ -54,6 +54,7 @@ body {
     margin: 20px;
     height: 150vw;
     border-radius: 10px;
+    position: relative;
 }
 
 .heading {
@@ -79,6 +80,32 @@ hr {
     border-top:1px dashed #000;
     color: #ffffff;
 }
+
+.add-item {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 22px;
+
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    background-color: #aeaeae;
+    color: #ffffff;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    overflow:scroll
+}
+
+
 </style>
 </head>
 <body>
@@ -102,12 +129,13 @@ hr {
 <br>
 <div class="list">
     <br>
-    <input class="checkbox" type="checkbox"><input class="textbox"><hr>
-    <input class="checkbox" type="checkbox"><input class="textbox"><hr>
-    <input class="checkbox" type="checkbox"><input class="textbox"><hr>
-    <input class="checkbox" type="checkbox"><input class="textbox"><hr>
-    <input class="checkbox" type="checkbox"><input class="textbox"><hr>
-    <input class="checkbox" type="checkbox"><input class="textbox"><hr>
+    <div onclick="addItem()" class="add-item"><b>+</b></div>
 </div>
+
+<script>
+    function addItem() {
+            document.getElementsByClassName("list")[0].innerHTML += `<input class="checkbox" type="checkbox"><input class="textbox"><hr>`
+        }
+</script>
 </body>
 </html>
