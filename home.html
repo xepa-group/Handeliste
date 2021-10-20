@@ -1,12 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .navbar i{
+            float: left;
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            margin: 0px 15px 5px 0px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar i:hover {
+            background: #f1f1f1;
+            color: black;
+        }
+
+        .navbar i.focus{
+            background-color: #04AA6D;
+            color: white;
+            border-radius:5px;
+        }
+
+        .main {
+            padding: 16px;
+            margin-bottom: 30px;
+        }
+
+        .list {
+            border: 2px solid #000000;
+            margin: 20px;
+            height: 150vw;
+            border-radius: 10px;
+        }
+
+        .heading {
+            margin: 50px 0px 0px 20px;
+
+        }
+
+        .checkbox {
+            margin: 5px 0px 0px 15px;
+            height: 15px;
+            width: 15px;
+        }
+
+        .textbox {
+            margin: 5px 0px 0px 15px;
+            font-size: 14px;
+            border: none;
+            outline: 0 !important;
+        }
+
+
+        hr {
+            margin: 0px 15px 15px 15px;
+            border-top:1px dashed #000;
+            color: #ffffff;
+        }
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
 </head>
 <body>
+
+<h1 class="heading">Handleliste</h1>
+<br>
+<br>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="burger.jpeg.jpg">
+            <img src="burger.jpeg" alt="Cinque Terre" width="60" height="40">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="pasta.jpg.jpg">
+            <img src="pasta.jpg" alt="Forest" width="60" height="40">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="pizza.jpeg.jpg">
+            <img src="pizza.jpeg" alt="Northern Lights" width="60" height="40">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="taco.jpeg.jpg">
+            <img src="taco.jpeg" alt="Mountains" width="60" height="40">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+
+<div class="navbar">
+    <i class="fi fi-rr-marker"></i>
+
+    <i class="fi fi-rr-list active"></i>
+
+    <i class="fi fi-rr-search"></i>
+
+    <i class="fi fi-rr-bell"></i>
+
+    <i class="fi fi-rr-shopping-cart"></i>
+</div>
+
+
+
 
 </body>
 </html>

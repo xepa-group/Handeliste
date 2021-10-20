@@ -1,0 +1,28 @@
+Index: home.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Title</title>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/home.html b/home.html
+--- a/home.html	(revision 8e01f2e9b6bf439c848e1767c2445583ab421780)
++++ b/home.html	(date 1634555933147)
+@@ -2,9 +2,15 @@
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+-    <title>Title</title>
++    <title>Hjemme siden</title>
++
+ </head>
+ <body>
+ 
++<div class="navbar">
++    <a href="home.html" class="active">Home</a>
++    <a href="profil.html">Profil</a>
++    <a href="handleliste">Handle lista</a>
++</div>
+ </body>
+ </html>
+\ No newline at end of file
