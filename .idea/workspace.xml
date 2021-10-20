@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="Lagde en mappe med alle filer" />
+    <list default="true" id="d9fda96b-880c-4014-8fd2-a4f51a563966" name="Changes" comment="fil endring" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +48,7 @@
       <updated>1634554450716</updated>
       <workItem from="1634554452463" duration="300000" />
       <workItem from="1634554790899" duration="1481000" />
-      <workItem from="1634631846508" duration="7203000" />
+      <workItem from="1634631846508" duration="7592000" />
     </task>
     <task id="LOCAL−00001" summary="Lage html og css fil">
       <created>1634554584066</created>
@@ -74,7 +74,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1634718265137</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="fil endring">
+      <created>1634718660084</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1634718660084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +104,7 @@
     <MESSAGE value="La til html og css fil" />
     <MESSAGE value="Hjemme side" />
     <MESSAGE value="Lagde en mappe med alle filer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagde en mappe med alle filer" />
+    <MESSAGE value="fil endring" />
+    <option name="LAST_COMMIT_MESSAGE" value="fil endring" />
   </component>
 </project>
