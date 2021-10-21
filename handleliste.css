@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar i{
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0px 15px 5px 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar i:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar i.focus{
+  background-color: #04AA6D;
+  color: white;
+  border-radius:5px;
+}
+
+.heading {
+    margin: 50px 0px 0px 20px;
+}
+
+.top-header {
+  position: relative;
+}
+
+.profile {
+  color: #000000;
+  text-decoration: none;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -9px 20px 0px 0px;
+
+  width: 10px;
+  height: 10px;
+  padding: 20px;
+
+  border: 2px solid #000000;
+  border-radius: 100px;
+
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.list {
+    border: 2px solid #000000;
+    margin: 20px;
+    height: 150vw;
+    border-radius: 10px;
+
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.list::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.container {
+    position: relative;
+}
+
+.checkbox {
+    margin: 5px 0px 0px 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.textbox {
+    margin: 5px 0px 0px 15px;
+    font-size: 14px;
+    border: none;
+    outline: 0 !important;
+}
+
+
+hr {
+    margin: 0px 15px 15px 15px;
+    border-top:1px dashed #000;
+    color: #ffffff;
+}
+
+.add-item {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 22px;
+
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    background-color: #aeaeae;
+    color: #ffffff;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 10px -10px 0px ;
+}
+
+.item {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -3px 20px 0px 0px;
+  padding: 10px;
+}
+
+.textbox {
+    width: 60vw
+}
