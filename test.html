@@ -54,12 +54,20 @@ body {
     margin: 20px;
     height: 150vw;
     border-radius: 10px;
+
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.list::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.container {
     position: relative;
 }
 
-.heading {
-    margin: 50px 0px 0px 20px;
-}
 
 .checkbox {
     margin: 5px 0px 0px 15px;
@@ -99,13 +107,58 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: 0px 10px -10px 0px ;
 }
 
-.list {
-    overflow:scroll
+.item {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -3px 20px 0px 0px;
+  padding: 10px;
+}
+
+.heading {
+    margin: 50px 0px 0px 20px;
+}
+
+.top-header {
+  position: relative;
+}
+
+.profile {
+  color: #000000;
+  text-decoration: none;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -9px 20px 0px 0px;
+
+  width: 10px;
+  height: 10px;
+  padding: 20px;
+
+  border: 2px solid #000000;
+  border-radius: 100px;
+
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
+.textbox {
+    width: 60vw
+}
 </style>
 </head>
 <body>
@@ -123,18 +176,47 @@ hr {
 
 </div>
 
+
+
+<div class="top-header">
 <h1 class="heading">Handleliste</h1>
+<a class="profile" href=""><i class="fi fi-rr-user"></i></a>
+</div>
+
 <br>
 <br>
 <br>
-<div class="list">
-    <br>
-    <div onclick="addItem()" class="add-item"><b>+</b></div>
+<div class="container">
+    <div class="list">
+        <br>
+        <div class="item">
+            <input class="checkbox" type="checkbox">
+            <input class="textbox" value="Jarlsberg Ost">
+            <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+            <hr>
+        </div>
+
+        <div class="item">
+            <input class="checkbox" type="checkbox">
+            <input class="textbox" value="Tine Helmelk">
+            <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+            <hr>
+        </div>
+
+        <div class="item">
+            <input class="checkbox" type="checkbox">
+            <input class="textbox" value="Kvikk Lunsj">
+            <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+            <hr>
+        </div>
+    </div>
+
+    <div class="add-item" onclick="addItem()"><b>+</b></div>
 </div>
 
 <script>
     function addItem() {
-            document.getElementsByClassName("list")[0].innerHTML += `<input class="checkbox" type="checkbox"><input class="textbox"><hr>`
+            document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span><hr></div>`
         }
 </script>
 </body>
