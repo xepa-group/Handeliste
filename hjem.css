@@ -69,22 +69,19 @@ body {
 }
 
 .topnav input {
-    border: 2px solid #ffffff;
     border-radius: 5px;
-
-   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     font-size: 17px;
+    outline: none;
+
+    width: 80vw; 
 
     padding: 10px;
     margin: auto;
     display: block;
 }
-
-.topnav input {
-    outline-width: 0;
-}
-
 
 div.matvarer {
     height: 150vw;
@@ -93,7 +90,6 @@ div.matvarer {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
-
 
 .matvarer::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
