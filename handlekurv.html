@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="handlekurv.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-<div class="Top">
-    <a class="Settings" href="Settings.html">
-        <i class="fa fa-cog" style="font-size:160px"></i>
-    </a>
-    <a class="SearchButton" href="Search.html">
-        <i class="fa fa-search" style="font-size:130px"></i>
-    </a>
-</div>
-<div class="h1">
-    Handleliste
-</div>
-<div class="SearchBar">
-    <div class="SearchBarText">
-        Legg til varer...
-    </div>
-</div>
-<div class="Handlelistebox">
-    <div class="HandlelisteMatvarer">
-        Tine Lett Melk 2l
-        <hr>
-        <br>
-        Brød
-        <hr>
-        <br>
-        Nugatti
-        <hr>
-        <br>
-        Gilde Grillpølser 600g
-        <hr>
-    </div>
-    <div class="HandlelistePris">
-        26,90,-
-        <br>
-        <br>
-        <br>
-        24,90,-
-        <br>
-        <br>
-        <br>
-        23,40,-
-        <br>
-        <br>
-        <br>
-        32,70,-
-    </div>
-</div>
-<div class="Sum">
-    Sum varer (4)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;=107,9
-    <br>
-    <br>
-    <a href="Comparison.html"> Finn billigste butikk her... > </a>
-</div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='handlekurv.css'>
+    </head>
+    <body>
+        <div class="top-header">
+            <h1 class="heading">Potensielle</h1>
+            <h1 class="heading2">Butikker</h1>
 
-<div class="navbar">
-    <a href=""><i class="fi fi-rr-marker"></i></a>
+            <a class="profile" href=""><i class="fi fi-rr-user"></i></a>
+        </div>
 
-    <a href="test.html"><i class="fi fi-rr-list active"></i></a>
+        <br>
+        <br>
 
-    <a href="home.html"><i class="fi fi-rr-search"></i></a>
+        <i class="fi fi-rr-settings-sliders sort"></i>
+        <br>
+        <br>
 
-    <a href=""><i class="fi fi-rr-bell"></i></a>
+        <div class="butikker">
+            <div class="butikk">
+                <img src="bilder/kiwi.png">
+                <div class="desc">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="location"><i class="fi fi-rr-marker"></i>Kongens gate 75</p>
+                    <p class="time"><i class="fi fi-rr-clock"></i>7:00 - 23:00</p>
+                </div>
 
-    <a href="Handlekurv.html"><i class="fi fi-rr-shopping-cart"></i></a>
-</div>
+                <p class="price">Kr. 174</p>
+            </div>
+
+
+            <div class="butikk">
+                <img src="bilder/meny.png">
+                <div class="desc">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="location"><i class="fi fi-rr-marker"></i>Markens gate 14</p>
+                    <p class="time"><i class="fi fi-rr-clock"></i>7:00 - 22:00</p>
+                </div>
+
+                <p class="price">Kr. 196</p>
+            </div>
+
+            <div class="butikk">
+                <img src="bilder/rema.png">
+                <div class="desc">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="location"><i class="fi fi-rr-marker"></i>Østre Strandgate 67</p>
+                    <p class="time"><i class="fi fi-rr-clock"></i>7:00 - 23:00</p>
+                </div>
+
+                <p class="price">Kr. 201</p>
+            </div>
+
+
+            <div class="butikk">
+                <img src="bilder/joker.png">
+                <div class="desc">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="location"><i class="fi fi-rr-marker"></i>Kronprinsens gate 49</p>
+                    <p class="time"><i class="fi fi-rr-clock"></i>7:00 - 22:00</p>
+                </div>
+
+                <p class="price">Kr. 208</p>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <i class="fi fi-rr-marker"></i>
+            
+            <a href="handleliste.html"><i class="fi fi-rr-list active"></i></a>
+
+            <a href="hjem.html"><i class="fi fi-rr-search"></i></a>
+
+            <i class="fi fi-rr-bell"></i>
+
+            <a href="handlekurv.html"><i class="fi fi-rr-shopping-cart"></i></a>
+        </div>
 </body>
 </html>
