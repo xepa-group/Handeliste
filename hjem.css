@@ -68,39 +68,61 @@ body {
 
 }
 
-.topnav input[type=text] {
-    text-align: center;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
+.topnav input {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+
+   /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
+
     font-size: 17px;
+
+    padding: 10px;
+    margin: auto;
+    display: block;
 }
 
-hr {
-    margin: 0px 15px 15px 15px;
-    border-top:1px dashed #000;
-    color: #ffffff;
+.topnav input {
+    outline-width: 0;
 }
+
+
+div.matvarer {
+    height: 150vw;
+
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.matvarer::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 div.gallery {
-    border: 1px solid #ccc;
+    border-radius: 10px ;
+    margin: 10px 20px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+div.gallery:active {
+    transform: scale(0.98);
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
+    border-radius: 10px 10px 0px 0px;
 }
 
 div.desc {
     padding: 15px;
+    margin-top: -5px;
     text-align: center;
 }
 
-* {
+* :not(.profile) {
     box-sizing: border-box;
 }
 
@@ -128,4 +150,3 @@ div.desc {
     display: table;
     clear: both;
 }
-
