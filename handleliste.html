@@ -14,30 +14,25 @@
 
         <br>
         <br>
-        <br>
 
         <div class="container">
             <div class="list">
-                <br>
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Jarlsberg Ost">
                     <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                    <hr>
                 </div>
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Tine Helmelk">
                     <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                    <hr>
                 </div>
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Kvikk Lunsj">
                     <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                    <hr>
                 </div>
             </div>
 
@@ -58,7 +53,7 @@
 
     <script>
         function addItem() {
-                document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span><hr></div>`
+                document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span></div>`
             }
     </script>
     </body>

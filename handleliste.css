@@ -69,11 +69,9 @@ body {
 }
 
 .list {
-    border: 2px solid #000000;
     margin: 20px;
-    height: 150vw;
-    border-radius: 10px;
-
+    height: 630px;
+    
     overflow: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -101,12 +99,6 @@ body {
 }
 
 
-hr {
-    margin: 0px 15px 15px 15px;
-    border-top:1px dashed #000;
-    color: #ffffff;
-}
-
 .add-item {
     position: absolute;
     bottom: 20px;
@@ -121,6 +113,7 @@ hr {
     background-color: #aeaeae;
     color: #ffffff;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
     display: flex;
     justify-content: center;
@@ -131,14 +124,21 @@ hr {
 
 .item {
   position: relative;
+  padding: 20px 0px 20px 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+  margin: 10px 10px 0px 10px;
 }
 
 .close {
   position: absolute;
   right: 0;
   top: 0;
-  margin: -3px 20px 0px 0px;
+  margin: 15px 20px 0px 0px;
   padding: 10px;
+  font-size: 20px;
+
 }
 
 .textbox {
