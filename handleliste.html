@@ -20,38 +20,38 @@
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Bama Cherry Tomater">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                    <span class="close" onclick="removeItem(this)">×</span>
                 </div>
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Jozo Havsalt">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                    <span class="close" onclick="removeItem(this)">×</span>
                 </div>
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Eldorado Tagliatelle Pasta">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                    <span class="close" onclick="removeItem(this)">×</span>
                 </div>
 
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Potte Gartner Basilikum">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                    <span class="close" onclick="removeItem(this)">×</span>
                 </div>
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Santa Maria Pepper">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                    <span class="close" onclick="removeItem(this)">×</span>
                 </div>
 
                 <div class="item">
                     <input class="checkbox" type="checkbox">
                     <input class="textbox" value="Jacobs Olivenolje">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                    <span class="close" onclick="removeItem(this)">×</span>
                 </div>
             </div>
 
@@ -71,8 +71,27 @@
         </div>
 
     <script>
+        // https://stackoverflow.com/a/14066534/9215267
+        function removeItem(element) {
+                    var div = element.parentElement;
+                    div.parentNode.removeChild(div);
+
+                    var items = document.getElementsByClassName("item");
+                    if (items.length === 0) {
+                                document.getElementsByClassName("list")[0].innerHTML = `<p class="empty-state centered">Trykk på plussen for å legge til varer i handlelista!</p>`
+                            }
+
+                }
+
         function addItem() {
-                document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span></div>`
+                    document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="removeItem(this)">×</span></div>`;
+
+                    // https://stackoverflow.com/a/14066534/9215267
+                    var emptyStateElement = document.getElementsByClassName("empty-state");
+                    if ( emptyStateElement.length === 1 ) {
+                                emptyStateElement[0].parentNode.removeChild(emptyStateElement[0]);
+                            }
+
             }
     </script>
     </body>
