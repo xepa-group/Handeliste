@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-        <link rel='stylesheet' href='hjem.css'>
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
+        <link rel="stylesheet" href="hjem.css">
     </head>
     <body>
         <div class="top-header">
@@ -16,42 +16,42 @@
         <br>
 
         <div class="topnav">
-            <input type="text" placeholder="Søk...">
+            <input type="text" id="search" onkeyup="search()" placeholder="Søk...">
         </div>
 
         <br>
 
-        <div class="matvarer">
-            <div class="responsive">
+        <ul id="matvarer">
+            <li class="responsive">
                 <div class="gallery">
-                    <img src="bilder/burger.jpeg" alt="Cinque Terre" width="60" height="40">
+                    <img src="bilder/burger.jpeg" alt="Burger" width="60" height="40">
                     <div class="desc">Burger med pommes frites</div>
                 </div>
-            </div>
+            </li>
 
             <a href="handleliste.html">
-            <div class="responsive">
+            <li class="responsive">
                 <div class="gallery">
-                    <img src="bilder/pasta.jpg" alt="Forest" width="60" height="40">
+                    <img src="bilder/pasta.jpg" alt="Pasta" width="60" height="40">
                     <div class="desc">Pasta med cherry tomater</div>
                 </div>
-            </div>
+            </li>
             </a>
 
-            <div class="responsive">
+            <li class="responsive">
                 <div class="gallery">
-                    <img src="bilder/pizza.jpeg" alt="Northern Lights" width="60" height="40">
+                    <img src="bilder/pizza.jpeg" alt="Pizza" width="60" height="40">
                     <div class="desc">Pizza med litt kjøtt og grønt</div>
                 </div>
-            </div>
+            </li>
 
-            <div class="responsive">
+            <li class="responsive">
                 <div class="gallery">
-                    <img src="bilder/taco.jpeg" alt="Mountains" width="60" height="40">
+                    <img src="bilder/taco.jpeg" alt="Taco" width="60" height="40">
                     <div class="desc">Taco med mye grønnsaker</div>
                 </div>
-            </div>
-        </div>
+            </li >
+        </ul>
 
         <div class="navbar">
             <i class="fi fi-rr-marker"></i>
@@ -65,5 +65,44 @@
             <a href="handlekurv.html"><i class="fi fi-rr-shopping-cart"></i></a>
         </div>
 
+        <script>
+        // Søke funksjon
+        // Tatt fra https://www.w3schools.com/howto/howto_js_filter_lists.asp
+        function search() {
+            var input, filter, ul, li, a, i, txtValue;               // Lager variabler
+            input = document.getElementById("search");               // Finner fram inputen vår gjennom ID
+            filter = input.value.toUpperCase();                      // Gjør søke teksten til store bokstaver 
+            ul = document.getElementById("matvarer");                // Finn elementen med ID "matvarer"
+            li = ul.getElementsByTagName("li");                      // Finn ALLE li elementene
+
+            // Loop gjennom alle li elementene
+            for (i = 0; i < li.length; i++) {
+                desc = li[i].getElementsByClassName("desc")[0];      // Finn elementen med klasse navn "desc" fra li den Nth li element
+                txtValue = desc.textContent || desc.innerText;       // Hent teksten til desc
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {   // Gjør teksten til stor bokstaver og skjekk om den matcher med det vi søkte
+                    li[i].style.display = "";                       
+                } else {
+                    li[i].style.display = "none";                    // Gjem elementet
+                }
+            }
+
+
+            var hasResults = Array.from(document.querySelectorAll("li")).map(x => x.style.display).includes("");
+            var hasErrorState = document.getElementsByClassName("error-state")[0];
+
+            // Hvis de er ingen resultater og det er ingen feil meldinger, vis feil meldingen
+            if (! hasResults && ! hasErrorState){
+                document.getElementById("matvarer").innerHTML += `<div class="error-state centered"><img src="bilder/error.png" width="120%"><p>Oops, finner ikke matretten!</p></div>`
+            } 
+
+            // Hvis de vises resultater og feil meldining vises, slett feil meldingen
+            if (hasResults && hasErrorState) {
+                var emptyStateElement = document.getElementsByClassName("error-state");
+                if ( emptyStateElement.length === 1 ) {
+                    emptyStateElement[0].parentNode.removeChild(emptyStateElement[0]);
+                }
+            }
+        }
+        </script>
 </body>
 </html>
