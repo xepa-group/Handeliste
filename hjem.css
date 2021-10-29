@@ -91,7 +91,7 @@ body {
     display: block;
 }
 
-div.matvarer {
+ul#matvarer {
     height: 150vw;
 
     overflow: scroll;
@@ -99,7 +99,7 @@ div.matvarer {
     scrollbar-width: none;  /* Firefox */
 }
 
-.matvarer::-webkit-scrollbar { 
+#matvarer::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
 
@@ -157,4 +157,25 @@ div.desc {
 a {
     text-decoration: none;
     color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding-left:0
+}
+
+
+.error-state {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #aeaeae;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
