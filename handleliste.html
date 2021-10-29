@@ -7,72 +7,59 @@
         <link rel='stylesheet' href='handleliste.css'>
     </head>
     <body>
-        <div class="top-header">
-            <h1 class="heading">Handleliste</h1>
-            <a class="profile" href=""><i class="fi fi-rr-user"></i></a>
-        </div>
-
-        <br>
-        <br>
-
-        <div class="container">
-            <div class="list">
-                <div class="item">
-                    <input class="checkbox" type="checkbox">
-                    <input class="textbox" value="Bama Cherry Tomater">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                </div>
-
-                <div class="item">
-                    <input class="checkbox" type="checkbox">
-                    <input class="textbox" value="Jozo Havsalt">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                </div>
-
-                <div class="item">
-                    <input class="checkbox" type="checkbox">
-                    <input class="textbox" value="Eldorado Tagliatelle Pasta">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                </div>
-
-
-                <div class="item">
-                    <input class="checkbox" type="checkbox">
-                    <input class="textbox" value="Potte Gartner Basilikum">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                </div>
-
-                <div class="item">
-                    <input class="checkbox" type="checkbox">
-                    <input class="textbox" value="Santa Maria Pepper">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                </div>
-
-                <div class="item">
-                    <input class="checkbox" type="checkbox">
-                    <input class="textbox" value="Jacobs Olivenolje">
-                    <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
-                </div>
+        <div class="phone">
+            <div class="top-header">
+                <h1 class="heading">Handleliste</h1>
+                <a class="profile" href=""><i class="fi fi-rr-user"></i></a>
             </div>
 
-            <div class="add-item" onclick="addItem()"><b>+</b></div>
+            <br>
+            <br>
+            <br>
+
+            <div class="container">
+                <div class="list">
+                    <br>
+                    <div class="item">
+                        <input class="checkbox" type="checkbox">
+                        <input class="textbox" value="Jarlsberg Ost">
+                        <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                        <hr>
+                    </div>
+
+                    <div class="item">
+                        <input class="checkbox" type="checkbox">
+                        <input class="textbox" value="Tine Helmelk">
+                        <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                        <hr>
+                    </div>
+
+                    <div class="item">
+                        <input class="checkbox" type="checkbox">
+                        <input class="textbox" value="Kvikk Lunsj">
+                        <span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="add-item" onclick="addItem()"><b>+</b></div>
+            </div>
+
+            <div class="navbar">
+                <i class="fi fi-rr-marker"></i>
+                
+                <a href="handleliste.html"><i class="fi fi-rr-list active"></i></a>
+
+                <a href="hjem.html"><i class="fi fi-rr-search"></i></a>
+
+                <i class="fi fi-rr-bell"></i>
+
+                <a href="handlekurv.html"><i class="fi fi-rr-shopping-cart"></i></a>
+            </div>
         </div>
-
-        <div class="navbar">
-            <i class="fi fi-rr-marker"></i>
-            
-            <a href="handleliste.html"><i class="fi fi-rr-list active"></i></a>
-
-            <a href="hjem.html"><i class="fi fi-rr-search"></i></a>
-
-            <i class="fi fi-rr-bell"></i>
-
-            <a href="handlekurv.html"><i class="fi fi-rr-shopping-cart"></i></a>
-        </div>
-
     <script>
         function addItem() {
-                document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span></div>`
+                document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="var div = this.parentElement; div.style.display ='none';">×</span><hr></div>`
             }
     </script>
     </body>
