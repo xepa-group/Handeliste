@@ -1,148 +1,96 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Importer CSS fra global.css som innholder CSS som blir brukt på alle
+ * HTML sidene. Derfor er det best at vi har det i an annen fil slik at vi ikke
+ * har duplikasering av CSS kode.
+ */
+@import "global.css";
 
-* {
-    /* Disable highlight/selection with mouse */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar i{
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  margin: 0px 15px 5px 0px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar i:hover {
-  background: #f1f1f1;
-  color: black;
-}
-
-.navbar i.focus{
-  background-color: #04AA6D;
-  color: white;
-  border-radius:5px;
-}
-
+/* CSS FOR OVERSKRIFTEN */
 .heading {
-    margin: 50px 0px 0px 20px;
+    margin: 50px 0px 0px 20px; /*Ha en margin av 50px på toppen, 0px på høyre og bunnen og 20px på venstre siden*/
 }
    
 .heading2 {
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 20px; /*Ha en margin på 20px venstre siden og 0px på de andre sidene*/
 }
 
-.top-header {
-  position: relative;
-}
-
-.profile {
-  color: #000000;
-  text-decoration: none;
-
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: -9px 20px 0px 0px;
-
-  width: 10px;
-  height: 10px;
-  padding: 20px;
-
-  border: 2px solid #000000;
-  border-radius: 100px;
-
-  font-size: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/*CSS FOR KONTAINER MED ALLE BUTIKK INFO*/
 .butikker {
     margin: 20px;
 }
 
 .butikk {
-    position: relative;
-    margin-top: 20px;
-    height: 115px;
-    border-radius: 10px;
+    position: relative; /*plaser elementene basert på andre elementer*/
+    margin-top: 20px; /*ha en margin på toppen med 20px*/
+    height: 115px; /*høyden skal være 115px*/
+    border-radius: 10px; /*radiusen skal være 10px*/
+
+    /*ha en fin skygge, tatt fra https://getcssscan.com/css-box-shadow-examples*/
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
+/* skaler elementet når brukeren trykker på den*/
 .butikk:active {
-    transform: scale(0.98);
+    transform: scale(0.98); /*gjør elementet 2% mindre*/
 }
 
+/*Butikk logoen*/
 .butikk img {
-    display: block;
-    width: 25%;
-    height: auto;
+    display: block; /*hvis bildet i et block formatt*/
+    width: 25%; /*bredden skal være 25% av hele bildet*/
+    height: auto; /*basert på bredden, kalkuler høyden*/
 
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin: 0; /* ikke ha noen margin*/
+    position: absolute; /*la elementet hver hvor den vil på en måte*/
+    top: 50%; /*bruk 50% av topppen*/
+    -ms-transform: translateY(-50%); /*flytt bildet -50% ned*/
+    transform: translateY(-50%); /*flytt bildet -50% ned*/
 
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 15px; /*ha en margin på 15px på venstre og 0px på de andre sidene*/
 }
 
+/*infoen om butikken*/
 .desc {
-    margin: 0px 0px 0px 90px;
-    font-size: 12px;
-    line-height: 0.5;
+    margin: 0px 0px 0px 90px; /*margin på 90px venstre og 0px og andre sidene*/
+    font-size: 12px; /*font størrelse på 12px*/
+    line-height: 0.5; /*linje høyde på 0.5*/
 }
 
-
+/*ikonene til infoen*/
 .desc i {
-    margin: 0px 5px 0px 20px;
+    margin: 0px 5px 0px 20px; /*margin på 0px på topp og bunnen, men 5px på høyre og 20px på venstre*/
 }
 
+/*tekst som viser prisen*/
 .price {
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-    margin-right: 40px;
-    font-weight: bold;
+    position: absolute;/*la elementet hver hvor den vil på en måte*/
+    right: 0; /*ikke ha rom på høyre*/
+    bottom: 30px; /*30px bra bunnen*/
+    margin-right: 40px; /*margin på 40px fra høyre siden*/
+    font-weight: bold; /*fet tekst*/
 }
 
+/*sorter knappen*/
 .sort {
-    float:right;
+    float:right; /*flytt den til høyre*/
 
-    margin: 0px 30px 0px 0px;
-    padding: 13px;
+    margin: 0px 30px 0px 0px; /*margin på 30px på høyre og 0px på andre sidene*/
+    padding: 13px; /* ha en padding på 13px på alle sidene*/
 
-    display: flex;
+    display: flex; /*hvis elementet i en flexbox*/
+
+    /*ikonen i mideten av elementet*/
     justify-content: center;
     align-items: center;
 
+    /*ha en raidus på 5px*/
     border-radius: 5px;
 
+    /*ha en fin skygge, tatt fra https://getcssscan.com/css-box-shadow-examples*/
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
+
+/* skaler elementet når brukeren trykker på den*/
 .sort:active {
-    transform: scale(0.94);
+    transform: scale(0.94);/*gjør elementet 6% mindre*/
 }
