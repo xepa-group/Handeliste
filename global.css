@@ -1,0 +1,82 @@
+/* Denne filen innholder CSS som blir brukt på alle HTML sidene.
+ * Derfor er det best at vi har CSSene som blir brukt på alle sidene
+ * i en fil og importerer dem slik at vi ikke har for mye duplikasering
+ * av kode.
+ */
+
+body {
+  margin: 0; /* Hele HTML siden skal ha en margin av 0 */
+  font-family: Arial, Helvetica, sans-serif; /* Hele HTML skal bruke Helvetica som fonten */
+}
+
+/* Fjern muligheten for å "highlighte" tekst untatt for input felter*/
+*:not(input) {
+    -webkit-user-select: none; /* Fjern muligheten på Safari */        
+    -moz-user-select: none; /* Fjern muligheten på Firefox */
+    -ms-user-select: none; /* Fjern muligheten på IE10+/Edge */
+    user-select: none; /* Fjern muligheten på Standard nettlesere */
+}
+
+/* CSS KODE FOR OVERSKRIFTEN */
+.top-header {
+  position: relative; /* Kalkuler automatisk hvor header skal plaserers basert på margin og padding */
+}
+
+/* CSS KODE FOR NAVBAR */
+/* Generelle CSS for hele navbar */
+.navbar {
+  overflow: hidden; /* Hvis det som er i elemente er for stort for å være i elementet, gjem det*/
+  background-color: #fff; /* Bakgrunns fargen skal være hvit */
+  position: fixed; /* La posisjonen av navbaren være statisk på en måte */
+  bottom: 0; /* hvor langt fra bunnen skal navbaren være */
+  width: 100%; /* Bredden skal være 100% slik at den fyller hele bredden of skjermen*/
+  display: flex; /* Har navbar som flex slik at den vokser/krymper når skjer størrelsen endres */
+  align-items: center; /* ha ikonene i midten */
+  justify-content: center; /* ha ikonene i midten */
+}
+
+/* Ikonene i navbaren*/
+.navbar i{
+  float: left; /* flytt ikonene til venstre siden av kontaineren */
+  display: block; /* hvis ikonene som en blokk element, nesten som avsnitter i en tekst */
+  color: #000000; /* fargen på ikonene skal være helt svarte */
+  text-align: center; /* ha ikonene i midten*/
+  padding: 14px 16px; /* legg til padding på 14px på  toppen og 16px på høyre siden */
+  margin: 0px 15px 5px 0px; /* legg til en margin av 0px på toppen, 15px på høyre side, 5px på bunnen og 0px på venstre siden */
+  text-decoration: none; /* Gjem understreken på ikonen fordi de er hyper lenker */
+  font-size: 17px; /* Størrelsen på ikonene skal være 17px */
+}
+
+
+/* CSS KODE FOR PROFIL KNAPPEN */
+.profile {
+  color: #000000;
+  text-decoration: none;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -9px 20px 0px 0px;
+
+  width: 10px;
+  height: 10px;
+  padding: 20px;
+
+  border: 2px solid #000000;
+  border-radius: 100px;
+
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*CSS FOR Å SETTE ET ELEMENT HELT I MIDTEN AV EN HTML SIDE*/
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

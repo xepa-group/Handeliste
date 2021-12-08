@@ -1,140 +1,90 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Importer CSS fra global.css som innholder CSS som blir brukt på alle
+ * HTML sidene. Derfor er det best at vi har det i an annen fil slik at vi ikke
+ * har duplikasering av CSS kode.
+ */
+@import "global.css";
 
-* {
-    /* Disable highlight/selection with mouse */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
 
-.navbar {
-  overflow: hidden;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar i{
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  margin: 0px 15px 5px 0px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar i:hover {
-  background: #f1f1f1;
-  color: black;
-}
-
-.navbar i.focus{
-  background-color: #04AA6D;
-  color: white;
-  border-radius:5px;
-}
-
+/* CSS FOR OVERSKRIFTEN */
 .heading {
-    margin: 50px 0px 0px 20px;
+    margin: 50px 0px 0px 20px; /*Ha en margin av 50px på toppen, 0px på høyre og bunnen og 20px på venstre siden*/
 }
 
-.top-header {
-  position: relative;
-}
-
-.profile {
-  color: #000000;
-  text-decoration: none;
-
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: -9px 20px 0px 0px;
-
-  width: 10px;
-  height: 10px;
-  padding: 20px;
-
-  border: 2px solid #000000;
-  border-radius: 100px;
-
-  font-size: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.topnav input {
-    border-radius: 5px;
-    border: none;
+/* CSS KODE FOR SØKEFELTET */
+.search input {
+    border-radius: 5px; /*Ha en radius av 5px*/
+    border: none; /*Ikke vis noe border*/
+    /*Vis en liten skygge, tatt fra https://getcssscan.com/css-box-shadow-examples*/
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-    font-size: 17px;
-    outline: none;
+    font-size: 17px; /*Font størrelsen på søke feltet skal være 17px*/
+    outline: none; /*Ikke vis en blå outline når søkefeltet er aktiv, https://stackoverflow.com/a/1457976/9215267*/
 
-    width: 80vw; 
+    width: 80vw; /*Bredden av søkefeltet skal være 80vw*/
 
-    padding: 10px;
-    margin: auto;
-    display: block;
+    padding: 10px; /*Han en padding av 10px*/
+    margin: auto; /*La nettleseren finne en passende margin*/
+    display: block; /* hvis søke feltet i en blokk */ 
 }
 
+
+/*CSS KODE FOR MATVARER LISTEN*/
 ul#matvarer {
+    /*Ha en høyde av 150vw*/
     height: 150vw;
 
+    /* Hvis ikke alle elementene kan være inni boksen, ha
+     * mulighete for å "scrolle"
+     */
     overflow: scroll;
+
+    /* Fjerne scrollbar i matvarer listen */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
 
+
+/* Fjerne scrollbar i matvarer listen på på nettlesre som bruker Webkit*/
 #matvarer::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none; 
 }
 
+/* Dette er CSS til hver matvare i gallery */
 div.gallery {
-    border-radius: 10px;
-    margin: 10px 20px 0px 20px;
+    border-radius: 10px;   /* ha en radius på 10px */
+    margin: 10px 20px 0px 20px; /* ha en margin hvor det er 10px på toppen, 20px på høyre, 0px på bunnen og 20px på venstre siden */
+   /* Legg til skygge til boksen slik at det gir en fin effekt. CSSen er tatt fra https://getcssscan.com/css-box-shadow-examples */ 
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
+/* Skaler elementet når brukeren trykker på den */
 div.gallery:active {
-    transform: scale(0.98);
+    transform: scale(0.98); /*Gjør matvare elementet som brukeren trykket på 2% mindre*/
 }
 
+/*Bildene in matvare listen/gallarien*/
 div.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0px 0px;
+    width: 100%; /*La bildet fylle opp hele elementet kontaineren*/
+    height: auto; /*La nettleseren finne en bra høyde*/
+    border-radius: 10px 10px 0px 0px; /*Sett en radius av 10px på venstre g høyre på toppen*/
 }
 
+/*Bilde teksten/infoen til matvaren*/
 div.desc {
-    padding: 15px;
-    margin-top: -5px;
-    text-align: center;
+    padding: 15px; /* ha en padding av 15px */
+    margin-top: -5px; /* Ha en margin av -5px på toppen */
+    text-align: center; /* Alle tekstene skal være i midten*/
 }
 
-* :not(.profile) {
-    box-sizing: border-box;
-}
-
+/*Dette er altså hele matrett listen/gallerien*/
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+    padding: 0 6px; /*ha en padding av 6px på venstre og høyre*/
+    float: left; /*posisjoner elementet til venstre*/
+    width: 24.99999%; /*bredden av elementet skal være 24.99%*/
 }
 
+
+/* Gjør bildene responsive på mindre skjermer*/ 
 @media only screen and (max-width: 700px) {
     .responsive {
         width: 49.99999%;
@@ -142,40 +92,34 @@ div.desc {
     }
 }
 
+/* Gjør bildene responsive på mindre skjermer*/ 
 @media only screen and (max-width: 500px) {
     .responsive {
         width: 100%;
     }
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+/*Alle elementer untatt for elementen med class .profile*/
+* :not(.profile) {
+    box-sizing: border-box; /*inkluder "border" og "padding" når høyde og bredde er brukt*/
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+    text-decoration: none; /*ikke hvis understrek på hyperlenker*/
+    color: #000000; /*fargen på hyperlenkene skal være helt svarte*/
 }
 
 ul {
-    list-style-type: none;
-    padding-left:0
+    list-style-type: none; /* ikke vis noe ikoner på listene som -> • */
+    padding-left:0 /*ikke ha noe padding på venstre siden på listene*/
 }
 
-
+/*CSS FOR ERROR STATE*/
+/*Error state er noe vi lærte i IS-104*/
 .error-state {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #aeaeae;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif; /* Bruk Helvetica som font for Error State*/
+    font-size: 20px; /*Font størelsen skal være 20px*/
+    text-align: center; /*Alt skal være i midten av HTML siden*/
+    font-weight: bold; /*Bruk fet skrift*/
+    color: #aeaeae; /*Bruk en grønn-ish farge*/
 }

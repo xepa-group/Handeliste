@@ -77,13 +77,17 @@
                     div.parentNode.removeChild(div);
 
                     var items = document.getElementsByClassName("item");
+
+                    // Hvis det er ingen varer i liste, hvis en hjelp melding
                     if (items.length === 0) {
                                 document.getElementsByClassName("list")[0].innerHTML = `<p class="empty-state centered">Trykk på plussen for å legge til varer i handlelista!</p>`
                             }
 
                 }
 
+        // Motsat av removeItem(). Legger til et nytt element
         function addItem() {
+                    // Legger til denne HTML koden i første index i list
                     document.getElementsByClassName("list")[0].innerHTML += `<div class="item"><input class="checkbox" type="checkbox"><input class="textbox"><span class="close" onclick="removeItem(this)">×</span></div>`;
 
                     // https://stackoverflow.com/a/14066534/9215267

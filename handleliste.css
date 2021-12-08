@@ -1,169 +1,115 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Importer CSS fra global.css som innholder CSS som blir brukt på alle
+ * HTML sidene. Derfor er det best at vi har det i an annen fil slik at vi ikke
+ * har duplikasering av CSS kode.
+ */
+@import "global.css";
 
-*:not(input) {
-    /* Disable highlight/selection with mouse */
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar i{
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  margin: 0px 15px 5px 0px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar i:hover {
-  background: #f1f1f1;
-  color: black;
-}
-
-.navbar i.focus{
-  background-color: #04AA6D;
-  color: white;
-  border-radius:5px;
-}
-
+/* CSS FOR OVERSKRIFTEN */
 .heading {
-    margin: 50px 0px 0px 20px;
+    margin: 50px 0px 0px 20px; /*Ha en margin av 50px på toppen, 0px på høyre og bunnen og 20px på venstre siden*/
 }
 
-.top-header {
-  position: relative;
-}
 
-.profile {
-  color: #000000;
-  text-decoration: none;
 
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: -9px 20px 0px 0px;
-
-  width: 10px;
-  height: 10px;
-  padding: 20px;
-
-  border: 2px solid #000000;
-  border-radius: 100px;
-
-  font-size: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+/* CSS KODE FOR SELVE LISTEN MED VARENE */
+.container {
+    position: relative; /* alt som er inni containeren skal være relativt for andre elementer */
 }
 
 .list {
-    margin: 20px;
-    height: 630px;
+    margin: 20px; /*ha en margin av 20px*/
+    height: 630px;/*Høyden skal være 630px*/
     
+    /* Hvis ikke alle elementene kan være inni boksen, ha
+     * mulighete for å "scrolle"
+     */
     overflow: scroll;
+  
+    /* Fjerne scrollbar i matvarer listen */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
 
+/* Fjerne scrollbar i matvarer listen på på nettlesre som bruker Webkit*/
 .list::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+    display: none;
 }
 
-.container {
-    position: relative;
-}
-
+/*CSS TIL SKJEKK BOXEN*/
 .checkbox {
-    margin: 5px 0px 0px 15px;
-    height: 15px;
-    width: 15px;
+    margin: 5px 0px 0px 15px; /*ha en margin på 5px på toppen, 0px på høyre og bunnen og 15px på venstre*/
+    height: 15px; /*ha en høyde på 15px*/
+    width: 15px; /*ha en bredde på 15px*/
 }
 
+/*CSS TIL TEXTBOX HVOR BRUKEREN SKRIVER INN VAREN*/
 .textbox {
-    margin: 5px 0px 0px 15px;
-    font-size: 14px;
-    border: none;
-    outline: 0 !important;
+    margin: 5px 0px 0px 15px; /*ha en margin på 5px på toppen, 0px på høyre og bunnen, og 15px på venstre */
+    font-size: 14px; /* ha en font størelse på 14px*/
+    border: none; /*ikke hvis en blå border når bruekren skriver i textboxen*/
+    outline: 0 !important; /*ikke hvis en blå border når bruekren skriver i textboxen*/
+    width: 60vw /*bredden på textboksen skal være 60vw*/
 }
 
 
+/*CSS TIL PLUSS KNAPP*/
 .add-item {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    position: absolute; /*ikke lag plass for andre elementer*/
+    bottom: 20px; /* 20px fra bunnen*/
+    right: 20px; /*20px fra høyre */
 
-    font-size: 22px;
+    font-size: 22px; /*bruk font størrelse på 22px*/
 
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 100px;
-    background-color: #aeaeae;
-    color: #ffffff;
-    padding: 15px;
+    width: 30px; /*bruk en bredde på 30px */
+    height: 30px; /*bruk en høyde på 30px */
+    border: none; /*ikke vis en border*/ 
+    border-radius: 100px; /*bruk en radius på 100px (sirkel) */
+    background-color: #aeaeae; /*bakgrunnsfarge som en type grå*/
+    color: #ffffff; /* fargen på plussen */
+    padding: 15px; /* bruk en padding på 15px*/
+
+    /*vis en fin skygge, tatt fra https://getcssscan.com/css-box-shadow-examples*/
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
-    display: flex;
+    /*for å plassere knappen på nede på høyre hjørne */
+    display: flex; 
     justify-content: center;
     align-items: center;
 
+    /*bruk en margn på 0px på både toppen og venstre side, men ha 15px på høyre og 15px på bunnen*/
     margin: 0px 10px 15px 0px ;
 }
 
+
+/* CSS FOR HVER VARE I LISTEN */
 .item {
-  position: relative;
-  padding: 20px 0px 20px 10px;
-  border-radius: 10px;
+  position: relative; /*plasser elementen relativ til andre elementer*/
+  padding: 20px 0px 20px 10px; /* bruk en margin på 20px på toppen, 0px høyre, 20px på bunnen og 10px på venstre*/
+  border-radius: 10px; /*vis en radius på 10px*/
+
+  /*vis en fin skygge, tatt fra https://getcssscan.com/css-box-shadow-examples*/
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
+  /*ha en margin på 10px alle sider untatt på bunnen*/
   margin: 10px 10px 0px 10px;
 }
 
+/* CSS FOR KRYSS/SLETT KNAPPEN */
 .close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 15px 20px 0px 0px;
-  padding: 10px;
-  font-size: 20px;
+  position: absolute; /*ikke lag plass til andre elementer*/
+  right: 0; /*ikke ha plass på høyre siden*/
+  top: 0; /*ikke ha plass på toppen*/
+  margin: 15px 20px 0px 0px; /* ha en margin på 15px på toppen, 20px på høyre og 0px på de andre sidene*/
+  padding: 10px; /*ha en padding på 10px på alle sidene*/
+  font-size: 20px; /*bruk en font størrelse på 20px*/
 
 }
 
-.textbox {
-    width: 60vw
-}
-
+/* CSS FOR EMPTY STATE SOM VI LÆRE I IS104*/
 .empty-state {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #aeaeae;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif; /*bruk Helvetica som font*/
+    font-size: 20px; /*font størrelsen skal være 20px*/
+    text-align: center; /*alt skal være i midten av HTML siden*/
+    font-weight: bold; /*bruk fet tekst*/
+    color: #aeaeae; /*bruk en grå farge*/
 }
